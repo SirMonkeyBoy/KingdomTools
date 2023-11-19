@@ -1,0 +1,4 @@
+name: KingdomTools
+version: '${project.version}'
+main: me.sirmonkeyboy.kingdomtools.KingdomTools
+api-version: '1.20'
