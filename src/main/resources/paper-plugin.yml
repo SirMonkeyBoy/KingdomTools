@@ -1,8 +1,0 @@
-name: KingdomTools
-version: '${project.version}'
-main: me.sirmonkeyboy.kingdomtools.KingdomTools
-api-version: '1.20'
-commands:
-  givetool:
-    description: Give you our custom items
-    usage: /<command>
