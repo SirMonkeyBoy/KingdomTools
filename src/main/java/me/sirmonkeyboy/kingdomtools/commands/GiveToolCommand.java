@@ -25,7 +25,7 @@ public class GiveToolCommand implements TabExecutor {
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String s, @NotNull String[] args) {
 
         if(sender instanceof Player p) {
-            if (p.hasPermission("GoldenKingdomUtils.commands.gkutils")) {
+            if (p.hasPermission("KingdomTools.commands.giveTools")) {
                 if (args.length > 0) {
                     for (int i = 0; i < getSubcommands().size(); i++) {
                         if (args[0].equalsIgnoreCase(getSubcommands().get(i).getName())) {
@@ -38,7 +38,7 @@ public class GiveToolCommand implements TabExecutor {
                             p.sendMessage(getSubcommands().get(i).getSyntax() + " - " + getSubcommands().get(i).getDescription());
                         }
                     }
-            }else if (!p.hasPermission("GoldenKingdomUtils.commands.gkutils")){
+            }else if (!p.hasPermission("KingdomTools.commands.giveTools")){
                 p.sendMessage(translateAlternateColorCodes('&', "&cYou don't have permission to use this command"));
             }
         }else if (sender instanceof  ConsoleCommandSender c){
