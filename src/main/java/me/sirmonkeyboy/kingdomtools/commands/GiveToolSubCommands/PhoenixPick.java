@@ -26,7 +26,7 @@ public class PhoenixPick extends SubCommand {
     @Override
     public void perform(Player p, String[] args) {
         if (p.hasPermission("KingdomTools.command.giveTools.PhoenixPick")){
-            p.getInventory().addItem(ItemManager.phoenixpick);
+            p.getInventory().addItem(ItemManager.PhoenixPickSilk);
         }
     }
 
