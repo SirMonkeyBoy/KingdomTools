@@ -1,5 +1,6 @@
 package me.sirmonkeyboy.kingdomtools.Items;
 
+import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
@@ -9,7 +10,7 @@ import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
-import java.util.Collections;
+import java.util.ArrayList;
 
 import static net.kyori.adventure.text.Component.*;
 
@@ -18,7 +19,7 @@ public class ItemManager {
     public static ItemStack PhoenixPickSilk;
     public static ItemStack PhoenixPickFortune;
 
-    public static void init() {
+    static {
         createPhoenixPickSilk();
         createPhoenixPickFortune();
     }
@@ -27,9 +28,13 @@ public class ItemManager {
         ItemStack item = new ItemStack(Material.DIAMOND_PICKAXE);
         ItemMeta mata = item.getItemMeta();
         mata.displayName(text("Phoenix Pick").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
-        mata.lore(Collections.singletonList(text("Efficiency XI").color(TextColor.color(0xAAAAAA))));
+        ArrayList<Component> lore = new ArrayList<>();
+        lore.add(text("Efficiency XI").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Silk Touch").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
+        mata.lore(lore);
         item.setItemMeta(mata);
-        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 11);
+        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 12);
         item.addUnsafeEnchantment(Enchantment.SILK_TOUCH, 1);
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
@@ -40,7 +45,11 @@ public class ItemManager {
         ItemStack item = new ItemStack(Material.DIAMOND_PICKAXE);
         ItemMeta mata = item.getItemMeta();
         mata.displayName(text("Phoenix Pick").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
-        mata.lore(Collections.singletonList(text("Efficiency").color(TextColor.color(0xAAAAAA))));
+        ArrayList<Component> lore = new ArrayList<>();
+        lore.add(text("Efficiency XI").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Fortune V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
+        mata.lore(lore);
         item.setItemMeta(mata);
         item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 11);
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);

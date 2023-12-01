@@ -12,7 +12,6 @@ public final class KingdomTools extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        ItemManager.init();
         Objects.requireNonNull(getCommand("givetool")).setExecutor(new GiveToolCommand());
     }
 
