@@ -18,6 +18,7 @@ public class ItemManager {
 
     public static ItemStack PhoenixPickSilk;
     public static ItemStack PhoenixPickFortune;
+    public static ItemStack PhoenixShovelSilk;
 
     static {
         createPhoenixPickSilk();
@@ -73,6 +74,6 @@ public class ItemManager {
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addUnsafeEnchantment(Enchantment.SILK_TOUCH,1);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
-        PhoenixPickFortune = item;
+        PhoenixShovelSilk = item;
     }
 }
