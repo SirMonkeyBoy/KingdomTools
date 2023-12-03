@@ -52,7 +52,7 @@ public class GiveToolCommand implements TabExecutor {
         }else if (sender instanceof BlockCommandSender cb){
             ConsoleCommandSender c = org.bukkit.Bukkit.getServer().getConsoleSender();
             cb.sendMessage(Component.text("Command Blocks can't run this command").color(TextColor.color(0xAA0000)));
-            c.sendMessage(Component.text("Command Blocks can't run this command").color(TextColor.color(0xAA0000)));
+            c.sendMessage(Component.text("Command Blocks can't run giveTools").color(TextColor.color(0xAA0000)));
         }
         return true;
     }
