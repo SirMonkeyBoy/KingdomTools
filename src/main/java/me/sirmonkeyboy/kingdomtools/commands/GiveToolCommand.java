@@ -1,5 +1,6 @@
 package me.sirmonkeyboy.kingdomtools.commands;
 
+import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.PhoenixAxeSilk;
 import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.PhoenixPickFortune;
 import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.PhoenixPickSilk;
 
@@ -22,6 +23,7 @@ public class GiveToolCommand implements TabExecutor {
         subcommands.add(new PhoenixPickSilk());
         subcommands.add(new PhoenixPickFortune());
         subcommands.add(new PhoenixShovelSilk());
+        subcommands.add(new PhoenixAxeSilk());
     }
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String s, @NotNull String[] args) {
