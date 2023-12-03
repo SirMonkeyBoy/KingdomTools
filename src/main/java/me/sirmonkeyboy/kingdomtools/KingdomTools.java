@@ -1,6 +1,5 @@
 package me.sirmonkeyboy.kingdomtools;
 
-import me.sirmonkeyboy.kingdomtools.Items.ItemManager;
 import me.sirmonkeyboy.kingdomtools.commands.GiveToolCommand;
 
 import org.bukkit.plugin.java.JavaPlugin;
