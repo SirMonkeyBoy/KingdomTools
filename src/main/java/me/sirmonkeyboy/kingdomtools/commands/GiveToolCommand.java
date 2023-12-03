@@ -3,8 +3,11 @@ package me.sirmonkeyboy.kingdomtools.commands;
 import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.PhoenixAxeSilk;
 import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.PhoenixPickFortune;
 import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.PhoenixPickSilk;
-
 import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.PhoenixShovelSilk;
+
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.TextColor;
+
 import org.bukkit.command.*;
 import org.bukkit.entity.Player;
 
@@ -14,7 +17,6 @@ import org.jetbrains.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.bukkit.ChatColor.translateAlternateColorCodes;
 
 public class GiveToolCommand implements TabExecutor {
     private ArrayList<SubCommand> subcommands = new ArrayList<>();
@@ -43,13 +45,14 @@ public class GiveToolCommand implements TabExecutor {
                         }
                     }
             }else if (!p.hasPermission("KingdomTools.commands.giveTools")){
-                p.sendMessage(translateAlternateColorCodes('&', "&cYou don't have permission to use this command"));
+                p.sendMessage(Component.text("You Don't have permission to use this command").color(TextColor.color(0xAA0000)));
             }
         }else if (sender instanceof  ConsoleCommandSender c){
-            c.sendMessage(translateAlternateColorCodes('&', "&cConsole can't run this command"));
-        }else if (sender instanceof BlockCommandSender){
+            c.sendMessage(Component.text("Console can't run this command").color(TextColor.color(0xAA0000)));
+        }else if (sender instanceof BlockCommandSender cb){
             ConsoleCommandSender c = org.bukkit.Bukkit.getServer().getConsoleSender();
-            c.sendMessage(translateAlternateColorCodes('&', "&cCommand Blocks can't run this command"));
+            cb.sendMessage(Component.text("Command Blocks can't run this command").color(TextColor.color(0xAA0000)));
+            c.sendMessage(Component.text("Command Blocks can't run this command").color(TextColor.color(0xAA0000)));
         }
         return true;
     }
