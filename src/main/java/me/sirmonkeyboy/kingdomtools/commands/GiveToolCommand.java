@@ -3,6 +3,7 @@ package me.sirmonkeyboy.kingdomtools.commands;
 import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.PhoenixPickFortune;
 import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.PhoenixPickSilk;
 
+import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.PhoenixShovelSilk;
 import org.bukkit.command.*;
 import org.bukkit.entity.Player;
 
@@ -20,6 +21,7 @@ public class GiveToolCommand implements TabExecutor {
     public GiveToolCommand(){
         subcommands.add(new PhoenixPickSilk());
         subcommands.add(new PhoenixPickFortune());
+        subcommands.add(new PhoenixShovelSilk());
     }
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String s, @NotNull String[] args) {
