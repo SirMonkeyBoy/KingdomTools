@@ -26,7 +26,7 @@ public class ItemManager {
 
     public static ItemStack PhoenixSword;
 
-    public static ItemStack PhoenixFishingRod;
+    public static ItemStack PhoenixRod;
 
     static {
         createPhoenixPickSilk();
@@ -34,7 +34,7 @@ public class ItemManager {
         createPhoenixShovelSilk();
         createPhoenixAxeSilk();
         createPhoenixSword();
-        createPhoenixFishingRod();
+        createPhoenixRod();
     }
 
     private static void createPhoenixPickSilk() {
@@ -130,7 +130,7 @@ public class ItemManager {
         PhoenixSword = item;
     }
 
-    private static void createPhoenixFishingRod() {
+    private static void createPhoenixRod() {
         ItemStack item = new ItemStack(Material.FISHING_ROD);
         ItemMeta mata = item.getItemMeta();
         mata.displayName(text("Phoenix Rod").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
@@ -144,7 +144,7 @@ public class ItemManager {
         item.addUnsafeEnchantment(Enchantment.LUCK,5);
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
-        PhoenixFishingRod = item;
+        PhoenixRod = item;
     }
 
 }
