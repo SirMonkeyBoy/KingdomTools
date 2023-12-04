@@ -26,12 +26,15 @@ public class ItemManager {
 
     public static ItemStack PhoenixSword;
 
+    public static ItemStack PhoenixFishingRod;
+
     static {
         createPhoenixPickSilk();
         createPhoenixPickFortune();
         createPhoenixShovelSilk();
         createPhoenixAxeSilk();
         createPhoenixSword();
+        createPhoenixFishingRod();
     }
 
     private static void createPhoenixPickSilk() {
@@ -126,4 +129,22 @@ public class ItemManager {
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixSword = item;
     }
+
+    private static void createPhoenixFishingRod() {
+        ItemStack item = new ItemStack(Material.FISHING_ROD);
+        ItemMeta mata = item.getItemMeta();
+        mata.displayName(text("Phoenix Rod").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
+        ArrayList<Component> lore = new ArrayList<>();
+        lore.add(text("Lure V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Luck of the Sea V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
+        mata.lore(lore);
+        item.setItemMeta(mata);
+        item.addUnsafeEnchantment(Enchantment.LURE, 5);
+        item.addUnsafeEnchantment(Enchantment.LUCK,5);
+        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
+        PhoenixFishingRod = item;
+    }
+
 }
