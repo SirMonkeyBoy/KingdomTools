@@ -24,6 +24,8 @@ public class ItemManager {
 
     public static ItemStack PhoenixAxeSilk;
 
+    public static ItemStack PhoenixSword;
+
     static {
         createPhoenixPickSilk();
         createPhoenixPickFortune();
@@ -97,5 +99,30 @@ public class ItemManager {
         item.addUnsafeEnchantment(Enchantment.SILK_TOUCH,1);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixAxeSilk = item;
+    }
+
+    private static void createPhoenixSword() {
+        ItemStack item = new ItemStack(Material.DIAMOND_SWORD);
+        ItemMeta mata = item.getItemMeta();
+        mata.displayName(text("Phoenix Sword").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
+        ArrayList<Component> lore = new ArrayList<>();
+        lore.add(text("Sharpness VII").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Smite V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Bane of Arthropods V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Looting VI").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Sweeping Edge III").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Knockback II").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
+        mata.lore(lore);
+        item.setItemMeta(mata);
+        item.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 7);
+        item.addUnsafeEnchantment(Enchantment.DAMAGE_UNDEAD, 5);
+        item.addUnsafeEnchantment(Enchantment.DAMAGE_ARTHROPODS,5);
+        item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 6);
+        item.addUnsafeEnchantment(Enchantment.SWEEPING_EDGE, 3);
+        item.addUnsafeEnchantment(Enchantment.KNOCKBACK, 2);
+        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
+        PhoenixSword = item;
     }
 }
