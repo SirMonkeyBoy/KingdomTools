@@ -31,6 +31,7 @@ public class ItemManager {
         createPhoenixPickFortune();
         createPhoenixShovelSilk();
         createPhoenixAxeSilk();
+        createPhoenixSword();
     }
 
     private static void createPhoenixPickSilk() {
