@@ -7,26 +7,26 @@ import org.bukkit.entity.Player;
 
 import java.util.List;
 
-public class PhoenixAxeSilk extends SubCommand {
+public class PhoenixAxeCombat extends SubCommand {
     @Override
     public String getName() {
-        return "PhoenixAxeSilk";
+        return "PhoenixAxeCombat";
     }
 
     @Override
     public String getDescription() {
-        return "Gives you a silk phoenix axe";
+        return "Gives you a combat phoenix axe";
     }
 
     @Override
     public String getSyntax() {
-        return "/givetool PhoenixAxeSilk";
+        return "/givetool PhoenixAxeCombat";
     }
 
     @Override
     public void perform(Player p, String[] args) {
-        if (p.hasPermission("KingdomTools.command.giveTools.PhoenixAxeSilk")){
-            p.getInventory().addItem(ItemManager.PhoenixAxeSilk);
+        if (p.hasPermission("KingdomTools.command.giveTools.PhoenixAxeCombat")){
+            p.getInventory().addItem(ItemManager.PhoenixAxeCombat);
         }
     }
 
