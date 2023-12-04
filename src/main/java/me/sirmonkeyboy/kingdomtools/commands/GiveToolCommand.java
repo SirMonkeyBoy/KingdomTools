@@ -1,9 +1,6 @@
 package me.sirmonkeyboy.kingdomtools.commands;
 
-import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.PhoenixAxeSilk;
-import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.PhoenixPickFortune;
-import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.PhoenixPickSilk;
-import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.PhoenixShovelSilk;
+import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.*;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
@@ -26,6 +23,7 @@ public class GiveToolCommand implements TabExecutor {
         subcommands.add(new PhoenixPickFortune());
         subcommands.add(new PhoenixShovelSilk());
         subcommands.add(new PhoenixAxeSilk());
+        subcommands.add(new PhoenixSword());
     }
 
     @Override

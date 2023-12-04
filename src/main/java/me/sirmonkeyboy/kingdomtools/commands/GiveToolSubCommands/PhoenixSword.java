@@ -5,29 +5,28 @@ import me.sirmonkeyboy.kingdomtools.commands.SubCommand;
 
 import org.bukkit.entity.Player;
 
-
 import java.util.List;
 
-public class PhoenixPickSilk extends SubCommand {
+public class PhoenixSword extends SubCommand {
     @Override
     public String getName() {
-        return "PhoenixPickSilk";
+        return "PhoenixSword";
     }
 
     @Override
     public String getDescription() {
-        return "Gives you a silk phoenix pick";
+        return "Gives you a phoenix sword";
     }
 
     @Override
     public String getSyntax() {
-        return "/givetool PhoenixPickSilk";
+        return "/givetool PhoenixSword";
     }
 
     @Override
     public void perform(Player p, String[] args) {
-        if (p.hasPermission("KingdomTools.command.giveTools.PhoenixPickSilk")){
-            p.getInventory().addItem(ItemManager.PhoenixPickSilk);
+        if (p.hasPermission("KingdomTools.command.giveTools.PhoenixSword")){
+            p.getInventory().addItem(ItemManager.PhoenixSword);
         }
     }
 
