@@ -16,6 +16,11 @@ import java.util.List;
 
 
 public class GiveToolCommand implements TabExecutor {
+
+    // I would like to credit the person who made this command manager, but I can't find them.
+    // it might be this https://www.youtube.com/watch?v=WyFN_jTS4nU&list=PLfu_Bpi_zcDNEKmR82hnbv9UxQ16nUBF7&index=61 one,
+    // but it doesn't have the tab complete.
+
     private ArrayList<SubCommand> subcommands = new ArrayList<>();
 
     public GiveToolCommand(){
