@@ -15,7 +15,7 @@ public class PhoenixAxeSilk extends SubCommand {
 
     @Override
     public String getDescription() {
-        return "Gives you a silk phoenix axe";
+        return "Gives you a phoenix axe silk";
     }
 
     @Override

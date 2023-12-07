@@ -15,7 +15,7 @@ public class PhoenixAxeCombat extends SubCommand {
 
     @Override
     public String getDescription() {
-        return "Gives you a combat phoenix axe";
+        return "Gives you a phoenix axe combat";
     }
 
     @Override

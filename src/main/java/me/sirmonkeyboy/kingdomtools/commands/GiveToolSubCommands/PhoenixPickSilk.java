@@ -16,7 +16,7 @@ public class PhoenixPickSilk extends SubCommand {
 
     @Override
     public String getDescription() {
-        return "Gives you a silk phoenix pick";
+        return "Gives you a phoenix pick silk";
     }
 
     @Override

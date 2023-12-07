@@ -15,7 +15,7 @@ public class PhoenixPickFortune extends SubCommand {
 
     @Override
     public String getDescription() {
-        return "Gives you a fortune phoenix pick";
+        return "Gives you a phoenix pick fortune";
     }
 
     @Override
