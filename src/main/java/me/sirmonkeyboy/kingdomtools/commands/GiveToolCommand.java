@@ -24,6 +24,7 @@ public class GiveToolCommand implements TabExecutor {
     private ArrayList<SubCommand> subcommands = new ArrayList<>();
 
     public GiveToolCommand(){
+        //Tools
         subcommands.add(new PhoenixPickSilk());
         subcommands.add(new PhoenixPickFortune());
         subcommands.add(new PhoenixShovelSilk());
@@ -33,6 +34,8 @@ public class GiveToolCommand implements TabExecutor {
         subcommands.add(new PhoenixRod());
         subcommands.add(new PhoenixHoeFortune());
         subcommands.add(new PhoenixBow());
+        //Armor
+        subcommands.add(new PhoenixHelmet());
     }
 
     @Override

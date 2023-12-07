@@ -17,7 +17,7 @@ import static net.kyori.adventure.text.Component.*;
 public class PhoenixItemManager {
 
     //Tools
-    
+
     public static ItemStack PhoenixPickSilk;
 
     public static ItemStack PhoenixPickFortune;
