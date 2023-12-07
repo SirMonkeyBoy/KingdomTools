@@ -32,6 +32,7 @@ public class GiveToolCommand implements TabExecutor {
         subcommands.add(new PhoenixSword());
         subcommands.add(new PhoenixRod());
         subcommands.add(new PhoenixHoeFortune());
+        subcommands.add(new PhoenixBow());
     }
 
     @Override
