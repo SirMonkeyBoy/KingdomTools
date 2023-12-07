@@ -28,6 +28,8 @@ public class PhoenixItemManager {
 
     public static ItemStack PhoenixSword;
 
+    public static ItemStack PhoenixBow;
+
     public static ItemStack PhoenixRod;
 
     public static ItemStack PhoenixHoeFortune;
@@ -39,6 +41,7 @@ public class PhoenixItemManager {
         createPhoenixAxeSilk();
         createPhoenixAxeCombat();
         createPhoenixSword();
+        createPhoenixBow();
         createPhoenixRod();
         createPhoenixHoeFortune();
     }
@@ -171,6 +174,31 @@ public class PhoenixItemManager {
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixSword = item;
+    }
+
+    private static void createPhoenixBow() {
+        ItemStack item = new ItemStack(Material.BOW);
+        ItemMeta mata = item.getItemMeta();
+        mata.displayName(text("Phoenix Bow").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
+        ArrayList<Component> lore = new ArrayList<>();
+        lore.add(text("Infinity").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Power VI").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Punch III").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Looting VI").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Flame").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
+        mata.lore(lore);
+        item.setItemMeta(mata);
+        item.addUnsafeEnchantment(Enchantment.ARROW_INFINITE, 5);
+        item.addUnsafeEnchantment(Enchantment.ARROW_DAMAGE, 6);
+        item.addUnsafeEnchantment(Enchantment.ARROW_KNOCKBACK, 3);
+        item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS,6);
+        item.addUnsafeEnchantment(Enchantment.ARROW_FIRE, 1);
+        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
+        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
+        PhoenixBow = item;
     }
 
     private static void createPhoenixRod() {
