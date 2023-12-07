@@ -13,5 +13,6 @@
 - Phoenix Axe Silk
 - Phoenix Axe Combat
 - Phoenix Rod
+- Phoenix Hoe Fortune
 
 Working on adding more items
