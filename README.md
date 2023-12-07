@@ -16,5 +16,6 @@
 - Phoenix Rod
 - Phoenix Hoe Fortune
 - Phoenix Helmet
+- Phoenix Elytra
 
 Working on adding more items
