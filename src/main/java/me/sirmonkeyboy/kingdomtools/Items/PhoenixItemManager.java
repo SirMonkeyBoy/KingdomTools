@@ -16,6 +16,8 @@ import static net.kyori.adventure.text.Component.*;
 
 public class PhoenixItemManager {
 
+    //Tools
+    
     public static ItemStack PhoenixPickSilk;
 
     public static ItemStack PhoenixPickFortune;
@@ -44,6 +46,14 @@ public class PhoenixItemManager {
         createPhoenixBow();
         createPhoenixRod();
         createPhoenixHoeFortune();
+    }
+
+    //Armor
+
+    public static ItemStack PhoenixHelmet;
+
+    static {
+        createPhoenixHelmet();
     }
 
     private static void createPhoenixPickSilk() {
@@ -237,5 +247,32 @@ public class PhoenixItemManager {
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixHoeFortune = item;
+    }
+
+    private static void createPhoenixHelmet() {
+        ItemStack item = new ItemStack(Material.DIAMOND_HELMET);
+        ItemMeta meta = item.getItemMeta();
+        meta.displayName(text("Phoenix Helmet").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
+        ArrayList<Component> lore = new ArrayList<>();
+        lore.add(text("Aqua Affinity V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Protection V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Blast Protection V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Fire Protection V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Projectile Protection V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Respiration V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
+        meta.lore(lore);
+        item.setItemMeta(meta);
+        item.addUnsafeEnchantment(Enchantment.WATER_WORKER, 5);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 5);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 5);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION_FIRE, 5);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION_PROJECTILE, 5);
+        item.addUnsafeEnchantment(Enchantment.OXYGEN, 5);
+        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
+        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
+        PhoenixHelmet = item;
     }
 }
