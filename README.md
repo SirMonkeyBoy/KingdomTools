@@ -17,5 +17,6 @@
 - Phoenix Hoe Fortune
 - Phoenix Helmet
 - Phoenix Elytra
+- Phoenix Leggings
 
 Working on adding more items
