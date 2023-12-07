@@ -24,11 +24,13 @@ public class PhoenixItemManager {
 
     public static ItemStack PhoenixAxeSilk;
 
+    public static ItemStack PhoenixAxeCombat;
+
     public static ItemStack PhoenixSword;
 
     public static ItemStack PhoenixRod;
 
-    public static ItemStack PhoenixAxeCombat;
+    public static ItemStack PhoenixHoeFortune;
 
     static {
         createPhoenixPickSilk();
@@ -38,6 +40,7 @@ public class PhoenixItemManager {
         createPhoenixAxeCombat();
         createPhoenixSword();
         createPhoenixRod();
+        createPhoenixHoeFortune();
     }
 
     private static void createPhoenixPickSilk() {
@@ -175,4 +178,22 @@ public class PhoenixItemManager {
         PhoenixRod = item;
     }
 
+    private static void createPhoenixHoeFortune() {
+        ItemStack item = new ItemStack(Material.DIAMOND_HOE);
+        ItemMeta mata = item.getItemMeta();
+        mata.displayName(text("Phoenix Hoe").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
+        ArrayList<Component> lore = new ArrayList<>();
+        lore.add(text("Efficiency V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Fortune V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
+        mata.lore(lore);
+        item.setItemMeta(mata);
+        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 5);
+        item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS,5);
+        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
+        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
+        PhoenixHoeFortune = item;
+    }
 }
