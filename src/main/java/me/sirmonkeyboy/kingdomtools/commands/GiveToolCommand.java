@@ -37,6 +37,7 @@ public class GiveToolCommand implements TabExecutor {
         //Armor
         subcommands.add(new PhoenixHelmet());
         subcommands.add(new PhoenixElytra());
+        subcommands.add(new PhoenixLeggings());
     }
 
     @Override
