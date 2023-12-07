@@ -9,9 +9,10 @@
 - Phoenix Sword
 - Phoenix Pick Silk
 - Phoenix Pick Fortune
-- Phoenix Shovel
 - Phoenix Axe Silk
 - Phoenix Axe Combat
+- Phoenix Shovel
+- Phoenix Bow
 - Phoenix Rod
 - Phoenix Hoe Fortune
 
