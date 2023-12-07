@@ -5,6 +5,7 @@ import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
 import org.bukkit.Material;
+import org.bukkit.attribute.Attribute;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
@@ -52,8 +53,11 @@ public class PhoenixItemManager {
 
     public static ItemStack PhoenixHelmet;
 
+    public static ItemStack PhoenixElytra;
+
     static {
         createPhoenixHelmet();
+        createPhoenixElytra();
     }
 
     private static void createPhoenixPickSilk() {
@@ -274,5 +278,27 @@ public class PhoenixItemManager {
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixHelmet = item;
+    }
+    private static void createPhoenixElytra() {
+        ItemStack item = new ItemStack(Material.ELYTRA);
+        ItemMeta meta = item.getItemMeta();
+        meta.displayName(text("Phoenix Elytra").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
+        ArrayList<Component> lore = new ArrayList<>();
+        lore.add(text("Protection V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Blast Protection V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Fire Protection V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Projectile Protection V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
+        meta.lore(lore);
+        item.setItemMeta(meta);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 5);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 5);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION_FIRE, 5);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION_PROJECTILE, 5);
+        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
+        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
+        PhoenixElytra = item;
     }
 }
