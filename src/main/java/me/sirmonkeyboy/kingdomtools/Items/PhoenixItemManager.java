@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 import static net.kyori.adventure.text.Component.*;
 
-public class ItemManager {
+public class PhoenixItemManager {
 
     public static ItemStack PhoenixPickSilk;
 

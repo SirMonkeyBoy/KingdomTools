@@ -1,6 +1,6 @@
 package me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands;
 
-import me.sirmonkeyboy.kingdomtools.Items.ItemManager;
+import me.sirmonkeyboy.kingdomtools.Items.PhoenixItemManager;
 import me.sirmonkeyboy.kingdomtools.commands.SubCommand;
 
 import org.bukkit.entity.Player;
@@ -26,7 +26,7 @@ public class PhoenixAxeCombat extends SubCommand {
     @Override
     public void perform(Player p, String[] args) {
         if (p.hasPermission("KingdomTools.command.giveTools.PhoenixAxeCombat")){
-            p.getInventory().addItem(ItemManager.PhoenixAxeCombat);
+            p.getInventory().addItem(PhoenixItemManager.PhoenixAxeCombat);
         }
     }
 
