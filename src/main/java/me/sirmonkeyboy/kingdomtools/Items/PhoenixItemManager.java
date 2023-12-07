@@ -55,9 +55,12 @@ public class PhoenixItemManager {
 
     public static ItemStack PhoenixElytra;
 
+    public static ItemStack PhoenixLeggings;
+
     static {
         createPhoenixHelmet();
         createPhoenixElytra();
+        createPhoenixLeggings();
     }
 
     private static void createPhoenixPickSilk() {
@@ -279,6 +282,7 @@ public class PhoenixItemManager {
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixHelmet = item;
     }
+
     private static void createPhoenixElytra() {
         ItemStack item = new ItemStack(Material.ELYTRA);
         ItemMeta meta = item.getItemMeta();
@@ -300,5 +304,28 @@ public class PhoenixItemManager {
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixElytra = item;
+    }
+
+    private static void createPhoenixLeggings() {
+        ItemStack item = new ItemStack(Material.DIAMOND_LEGGINGS);
+        ItemMeta meta = item.getItemMeta();
+        meta.displayName(text("Phoenix Leggings").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
+        ArrayList<Component> lore = new ArrayList<>();
+        lore.add(text("Protection V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Blast Protection V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Fire Protection V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Projectile Protection V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
+        meta.lore(lore);
+        item.setItemMeta(meta);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 5);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 5);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION_FIRE, 5);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION_PROJECTILE, 5);
+        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
+        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
+        PhoenixLeggings = item;
     }
 }
