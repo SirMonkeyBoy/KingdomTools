@@ -15,5 +15,6 @@
 - Phoenix Bow
 - Phoenix Rod
 - Phoenix Hoe Fortune
+- Phoenix Helmet
 
 Working on adding more items
