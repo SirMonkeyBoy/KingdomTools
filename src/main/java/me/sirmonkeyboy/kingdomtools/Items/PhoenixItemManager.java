@@ -50,11 +50,13 @@ public class PhoenixItemManager {
         ArrayList<Component> lore = new ArrayList<>();
         lore.add(text("Efficiency XI").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Silk Touch").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
         mata.lore(lore);
         item.setItemMeta(mata);
         item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 12);
         item.addUnsafeEnchantment(Enchantment.SILK_TOUCH, 1);
+        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixPickSilk = item;
@@ -67,12 +69,14 @@ public class PhoenixItemManager {
         ArrayList<Component> lore = new ArrayList<>();
         lore.add(text("Efficiency XI").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Fortune V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
         mata.lore(lore);
         item.setItemMeta(mata);
         item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 11);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 5);
+        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
+        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixPickFortune = item;
     }
@@ -84,12 +88,14 @@ public class PhoenixItemManager {
         ArrayList<Component> lore = new ArrayList<>();
         lore.add(text("Efficiency X").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Silk Touch").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
         mata.lore(lore);
         item.setItemMeta(mata);
         item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 10);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addUnsafeEnchantment(Enchantment.SILK_TOUCH,1);
+        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
+        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixShovelSilk = item;
     }
@@ -101,12 +107,14 @@ public class PhoenixItemManager {
         ArrayList<Component> lore = new ArrayList<>();
         lore.add(text("Efficiency X").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Silk Touch").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
         mata.lore(lore);
         item.setItemMeta(mata);
         item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 10);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addUnsafeEnchantment(Enchantment.SILK_TOUCH,1);
+        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
+        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixAxeSilk = item;
     }
@@ -122,6 +130,7 @@ public class PhoenixItemManager {
         lore.add(text("Looting VI").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Sweeping Edge III").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Knockback II").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
         mata.lore(lore);
         item.setItemMeta(mata);
@@ -131,6 +140,7 @@ public class PhoenixItemManager {
         item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 6);
         item.addUnsafeEnchantment(Enchantment.SWEEPING_EDGE, 3);
         item.addUnsafeEnchantment(Enchantment.KNOCKBACK, 2);
+        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixAxeCombat = item;
@@ -147,6 +157,7 @@ public class PhoenixItemManager {
         lore.add(text("Looting VI").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Sweeping Edge III").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Knockback II").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
         mata.lore(lore);
         item.setItemMeta(mata);
@@ -156,6 +167,7 @@ public class PhoenixItemManager {
         item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 6);
         item.addUnsafeEnchantment(Enchantment.SWEEPING_EDGE, 3);
         item.addUnsafeEnchantment(Enchantment.KNOCKBACK, 2);
+        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixSword = item;
@@ -168,11 +180,13 @@ public class PhoenixItemManager {
         ArrayList<Component> lore = new ArrayList<>();
         lore.add(text("Lure V").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Luck of the Sea V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
         mata.lore(lore);
         item.setItemMeta(mata);
         item.addUnsafeEnchantment(Enchantment.LURE, 5);
         item.addUnsafeEnchantment(Enchantment.LUCK,5);
+        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixRod = item;
