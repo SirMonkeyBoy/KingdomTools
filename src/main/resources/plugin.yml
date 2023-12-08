@@ -6,6 +6,9 @@ prefix: KingdomTools
 load: STARTUP
 authors: [SirMonkeyBoy]
 commands:
+  kingdomtools:
+    description: Info about KingdomTools
+    usage: /<command>
   givetool:
     description: Give you our custom items
     usage: /<command>
