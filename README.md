@@ -2,7 +2,8 @@
 ## Custom tool plugin for my server
 
 ### Commands
-- `/givetool {itemname}` gives you the custom items 
+- `/givetool {itemname}` Gives you the custom items
+- `/kingdomtools` Gives you info about the plugin
 
 ### List of items
 
