@@ -1,5 +1,6 @@
 package me.sirmonkeyboy.kingdomtools;
 
+import me.sirmonkeyboy.kingdomtools.commands.GiveToolMCommand;
 import me.sirmonkeyboy.kingdomtools.commands.GiveToolPCommand;
 import me.sirmonkeyboy.kingdomtools.commands.KingdomTool;
 
@@ -13,7 +14,8 @@ public final class KingdomTools extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         Objects.requireNonNull(getCommand("KingdomTools")).setExecutor(new KingdomTool(this));
-        Objects.requireNonNull(getCommand("givetoolP")).setExecutor(new GiveToolPCommand());
+        Objects.requireNonNull(getCommand("givetoolp")).setExecutor(new GiveToolPCommand());
+        Objects.requireNonNull(getCommand("givetoolm")).setExecutor(new GiveToolMCommand());
     }
 
     @Override

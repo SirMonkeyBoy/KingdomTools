@@ -10,5 +10,8 @@ commands:
     description: Info about KingdomTools
     usage: /<command>
   givetoolp:
-    description: Give you our custom items
+    description: Give you Phoenix items
+    usage: /<command>
+  givetoolm:
+    description: Give you Mythical items
     usage: /<command>
