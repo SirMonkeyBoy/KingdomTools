@@ -1,4 +1,4 @@
-package me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands;
+package me.sirmonkeyboy.kingdomtools.commands.GiveToolPSubCommands;
 
 import me.sirmonkeyboy.kingdomtools.Items.PhoenixItemManager;
 import me.sirmonkeyboy.kingdomtools.commands.SubCommand;
@@ -7,26 +7,26 @@ import org.bukkit.entity.Player;
 
 import java.util.List;
 
-public class PhoenixHoeFortune extends SubCommand {
+public class PhoenixHelmet extends SubCommand {
     @Override
     public String getName() {
-        return "PhoenixHoeFortune";
+        return "PhoenixHelmet";
     }
 
     @Override
     public String getDescription() {
-        return "Gives you a phoenix hoe fortune";
+        return "Gives you a phoenix helmet";
     }
 
     @Override
     public String getSyntax() {
-        return "/givetool PhoenixHoeFortune";
+        return "/givetool PhoenixHelmet";
     }
 
     @Override
     public void perform(Player p, String[] args) {
-        if (p.hasPermission("KingdomTools.command.giveTools.PhoenixHoeFortune")){
-            p.getInventory().addItem(PhoenixItemManager.PhoenixHoeFortune);
+        if (p.hasPermission("KingdomTools.command.giveTools.PhoenixHelmet")){
+            p.getInventory().addItem(PhoenixItemManager.PhoenixHelmet);
         }
     }
 

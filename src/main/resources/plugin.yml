@@ -9,6 +9,6 @@ commands:
   kingdomtools:
     description: Info about KingdomTools
     usage: /<command>
-  givetool:
+  givetoolp:
     description: Give you our custom items
     usage: /<command>

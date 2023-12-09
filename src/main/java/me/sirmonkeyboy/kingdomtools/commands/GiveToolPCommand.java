@@ -1,6 +1,6 @@
 package me.sirmonkeyboy.kingdomtools.commands;
 
-import me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands.*;
+import me.sirmonkeyboy.kingdomtools.commands.GiveToolPSubCommands.*;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class GiveToolCommand implements TabExecutor {
+public class GiveToolPCommand implements TabExecutor {
 
     // I would like to credit the person who made this command manager, but I can't find them.
     // it might be this https://www.youtube.com/watch?v=WyFN_jTS4nU&list=PLfu_Bpi_zcDNEKmR82hnbv9UxQ16nUBF7&index=61 one,
@@ -23,7 +23,7 @@ public class GiveToolCommand implements TabExecutor {
 
     private ArrayList<SubCommand> subcommands = new ArrayList<>();
 
-    public GiveToolCommand(){
+    public GiveToolPCommand(){
         //Tools
         subcommands.add(new PhoenixPickSilk());
         subcommands.add(new PhoenixPickFortune());

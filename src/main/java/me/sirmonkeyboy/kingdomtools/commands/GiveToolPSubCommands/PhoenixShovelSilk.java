@@ -1,4 +1,4 @@
-package me.sirmonkeyboy.kingdomtools.commands.GiveToolSubCommands;
+package me.sirmonkeyboy.kingdomtools.commands.GiveToolPSubCommands;
 
 import me.sirmonkeyboy.kingdomtools.Items.PhoenixItemManager;
 import me.sirmonkeyboy.kingdomtools.commands.SubCommand;
