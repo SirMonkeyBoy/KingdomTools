@@ -8,6 +8,8 @@
 
 ### List of items
 
+Phoenix Items
+
 - Phoenix Sword
 - Phoenix Pick Silk
 - Phoenix Pick Fortune
@@ -21,5 +23,9 @@
 - Phoenix Elytra
 - Phoenix Leggings
 - Phoenix Boots
+
+Mythical Items
+
+- Mythical Pick Silk
 
 Working on adding more items
