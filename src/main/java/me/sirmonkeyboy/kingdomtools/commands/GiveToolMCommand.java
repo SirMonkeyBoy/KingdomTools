@@ -26,6 +26,7 @@ public class GiveToolMCommand implements TabExecutor {
     public GiveToolMCommand() {
         //Tools
         subcommands.add(new MythicalPickSilk());
+        subcommands.add(new MythicalPickFortune());
     }
 
     @Override
