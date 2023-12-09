@@ -2,8 +2,9 @@
 ## Custom tool plugin for my server
 
 ### Commands
-- `/givetool {itemname}` Gives you the custom items
 - `/kingdomtools` Gives you info about the plugin
+- `/givetoolp {itemname}` Gives you Phoenix items
+- `/givetoolm {itemname}` Gives you Mythical items
 
 ### List of items
 
