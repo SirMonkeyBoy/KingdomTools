@@ -19,8 +19,11 @@ public class MythicalItemManager {
     //Tools
     public static ItemStack MythicalPickSilk;
 
+    public static ItemStack MythicalPickFortune;
+
     static {
         createMythicalPickSilk();
+        createMythicalPickFortune();
     }
 
     private static void createMythicalPickSilk() {
@@ -40,5 +43,24 @@ public class MythicalItemManager {
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         MythicalPickSilk = item;
+    }
+
+    private static void createMythicalPickFortune() {
+        ItemStack item = new ItemStack(Material.DIAMOND_PICKAXE);
+        ItemMeta mata = item.getItemMeta();
+        mata.displayName(text("Mythical Pick").color(TextColor.color(0xAA0000)).decoration(TextDecoration.BOLD, true));
+        ArrayList<Component> lore = new ArrayList<>();
+        lore.add(text("Efficiency VII").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Fortune IV").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
+        mata.lore(lore);
+        item.setItemMeta(mata);
+        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 7);
+        item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 4);
+        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
+        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
+        MythicalPickFortune = item;
     }
 }

@@ -330,6 +330,7 @@ public class PhoenixItemManager {
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixLeggings = item;
     }
+
     private static void createPhoenixBoots() {
         ItemStack item = new ItemStack(Material.DIAMOND_BOOTS);
         ItemMeta meta = item.getItemMeta();
