@@ -1,5 +1,6 @@
 package me.sirmonkeyboy.kingdomtools.commands;
-import me.sirmonkeyboy.kingdomtools.commands.GiveToolPSubCommands.*;
+
+import me.sirmonkeyboy.kingdomtools.commands.GiveToolMSubCommands.*;
 
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
@@ -24,6 +25,7 @@ public class GiveToolMCommand implements TabExecutor {
 
     public GiveToolMCommand() {
         //Tools
+        subcommands.add(new MythicalPickSilk());
     }
 
     @Override
