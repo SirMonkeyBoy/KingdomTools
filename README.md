@@ -19,5 +19,6 @@
 - Phoenix Helmet
 - Phoenix Elytra
 - Phoenix Leggings
+- Phoenix Boots
 
 Working on adding more items
