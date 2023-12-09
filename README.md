@@ -27,5 +27,6 @@ Phoenix Items
 Mythical Items
 
 - Mythical Pick Silk
+- Mythical Pick Fortune
 
 Working on adding more items
