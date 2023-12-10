@@ -26,7 +26,7 @@ public class PhoenixLeggings extends SubCommand {
     @Override
     public void perform(Player p, String[] args) {
         if (p.hasPermission("KingdomTools.command.giveTools.PhoenixLeggings")){
-            p.getInventory().addItem(PhoenixItemManager.PhoenixLeggings);
+            p.getInventory().addItem(PhoenixItemManager.PhoenixPants);
         }
     }
 

@@ -54,14 +54,14 @@ public class PhoenixItemManager {
 
     public static ItemStack PhoenixElytra;
 
-    public static ItemStack PhoenixLeggings;
+    public static ItemStack PhoenixPants;
 
     public static ItemStack PhoenixBoots;
 
     static {
         createPhoenixHelmet();
         createPhoenixElytra();
-        createPhoenixLeggings();
+        createPhoenixPants();
         createPhoenixBoots();
     }
 
@@ -308,10 +308,10 @@ public class PhoenixItemManager {
         PhoenixElytra = item;
     }
 
-    private static void createPhoenixLeggings() {
+    private static void createPhoenixPants() {
         ItemStack item = new ItemStack(Material.DIAMOND_LEGGINGS);
         ItemMeta meta = item.getItemMeta();
-        meta.displayName(text("Phoenix Leggings").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
+        meta.displayName(text("Phoenix Pants").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
         ArrayList<Component> lore = new ArrayList<>();
         lore.add(text("Protection V").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Blast Protection V").color(TextColor.color(0xAAAAAA)));
@@ -328,7 +328,7 @@ public class PhoenixItemManager {
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
-        PhoenixLeggings = item;
+        PhoenixPants = item;
     }
 
     private static void createPhoenixBoots() {
