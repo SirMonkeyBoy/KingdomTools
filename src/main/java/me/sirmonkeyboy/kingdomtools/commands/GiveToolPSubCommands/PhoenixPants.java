@@ -7,7 +7,7 @@ import org.bukkit.entity.Player;
 
 import java.util.List;
 
-public class PhoenixLeggings extends SubCommand {
+public class PhoenixPants extends SubCommand {
     @Override
     public String getName() {
         return "PhoenixLeggings";
@@ -25,7 +25,7 @@ public class PhoenixLeggings extends SubCommand {
 
     @Override
     public void perform(Player p, String[] args) {
-        if (p.hasPermission("KingdomTools.command.giveTools.PhoenixLeggings")){
+        if (p.hasPermission("KingdomTools.command.giveTools.PhoenixPants")){
             p.getInventory().addItem(PhoenixItemManager.PhoenixPants);
         }
     }
