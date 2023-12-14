@@ -24,9 +24,7 @@ public class PhoenixItemManager {
 
     public static ItemStack PhoenixShovelSilk;
 
-    public static ItemStack PhoenixAxeSilk;
-
-    public static ItemStack PhoenixAxeCombat;
+    public static ItemStack PhoenixAxe;
 
     public static ItemStack PhoenixSword;
 
@@ -40,8 +38,7 @@ public class PhoenixItemManager {
         createPhoenixPickSilk();
         createPhoenixPickFortune();
         createPhoenixShovelSilk();
-        createPhoenixAxeSilk();
-        createPhoenixAxeCombat();
+        createPhoenixAxe();
         createPhoenixSword();
         createPhoenixBow();
         createPhoenixRod();
@@ -122,26 +119,7 @@ public class PhoenixItemManager {
         PhoenixShovelSilk = item;
     }
 
-    private static void createPhoenixAxeSilk() {
-        ItemStack item = new ItemStack(Material.DIAMOND_AXE);
-        ItemMeta mata = item.getItemMeta();
-        mata.displayName(text("Phoenix Axe").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
-        ArrayList<Component> lore = new ArrayList<>();
-        lore.add(text("Efficiency X").color(TextColor.color(0xAAAAAA)));
-        lore.add(text("Silk Touch").color(TextColor.color(0xAAAAAA)));
-        lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
-        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
-        mata.lore(lore);
-        item.setItemMeta(mata);
-        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 10);
-        item.addUnsafeEnchantment(Enchantment.SILK_TOUCH,1);
-        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
-        item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
-        PhoenixAxeSilk = item;
-    }
-
-    private static void createPhoenixAxeCombat(){
+    private static void createPhoenixAxe(){
         ItemStack item = new ItemStack(Material.DIAMOND_AXE);
         ItemMeta mata = item.getItemMeta();
         mata.displayName(text("Phoenix Axe").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
@@ -152,6 +130,8 @@ public class PhoenixItemManager {
         lore.add(text("Looting VI").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Sweeping Edge III").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Knockback II").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Efficiency X").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Silk Touch").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
         mata.lore(lore);
@@ -165,7 +145,7 @@ public class PhoenixItemManager {
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
-        PhoenixAxeCombat = item;
+        PhoenixAxe = item;
     }
 
     private static void createPhoenixSword() {
