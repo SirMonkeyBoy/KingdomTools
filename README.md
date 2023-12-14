@@ -13,8 +13,7 @@ Phoenix Items
 - Phoenix Sword
 - Phoenix Pick Silk
 - Phoenix Pick Fortune
-- Phoenix Axe Silk
-- Phoenix Axe Combat
+- Phoenix Axe 
 - Phoenix Shovel
 - Phoenix Bow
 - Phoenix Rod
