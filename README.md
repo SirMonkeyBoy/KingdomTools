@@ -29,5 +29,6 @@ Mythical Items
 - Mythical Pick Fortune
 - Mythical Shovel Silk
 - Mythical Axe
+- Mythical Shovel
 
 Working on adding more items
