@@ -154,8 +154,8 @@ public class PhoenixItemManager {
         mata.displayName(text("Phoenix Sword").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
         ArrayList<Component> lore = new ArrayList<>();
         lore.add(text("Sharpness VII").color(TextColor.color(0xAAAAAA)));
-        lore.add(text("Smite V").color(TextColor.color(0xAAAAAA)));
-        lore.add(text("Bane of Arthropods V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Smite VII").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Bane of Arthropods VII").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Looting VI").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Sweeping Edge III").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Knockback II").color(TextColor.color(0xAAAAAA)));
@@ -164,8 +164,8 @@ public class PhoenixItemManager {
         mata.lore(lore);
         item.setItemMeta(mata);
         item.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 7);
-        item.addUnsafeEnchantment(Enchantment.DAMAGE_UNDEAD, 5);
-        item.addUnsafeEnchantment(Enchantment.DAMAGE_ARTHROPODS,5);
+        item.addUnsafeEnchantment(Enchantment.DAMAGE_UNDEAD, 7);
+        item.addUnsafeEnchantment(Enchantment.DAMAGE_ARTHROPODS,7);
         item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 6);
         item.addUnsafeEnchantment(Enchantment.SWEEPING_EDGE, 3);
         item.addUnsafeEnchantment(Enchantment.KNOCKBACK, 2);
