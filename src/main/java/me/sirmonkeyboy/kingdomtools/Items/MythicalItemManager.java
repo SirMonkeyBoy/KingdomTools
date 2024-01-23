@@ -40,10 +40,12 @@ public class MythicalItemManager {
         ItemMeta mata = item.getItemMeta();
         mata.displayName(text("Mythical Pick").color(TextColor.color(0xAA0000)).decoration(TextDecoration.BOLD, true));
         ArrayList<Component> lore = new ArrayList<>();
-        lore.add(text("Efficiency VII").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Efficiency ").color(TextColor.color(0xAAAAAA)).append(text("VII").color(TextColor.color(0xAF0000))));
         lore.add(text("Silk Touch").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
-        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Unbreaking ").color(TextColor.color(0xAAAAAA)).append(text("V").color(TextColor.color(0xAF0000))));
+        lore.add(text("").color(TextColor.color(0x555555)));
+        lore.add(text("v1").color(TextColor.color(0xAF0000)));
         mata.lore(lore);
         item.setItemMeta(mata);
         item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 7);
@@ -59,10 +61,12 @@ public class MythicalItemManager {
         ItemMeta mata = item.getItemMeta();
         mata.displayName(text("Mythical Pick").color(TextColor.color(0xAA0000)).decoration(TextDecoration.BOLD, true));
         ArrayList<Component> lore = new ArrayList<>();
-        lore.add(text("Efficiency VII").color(TextColor.color(0xAAAAAA)));
-        lore.add(text("Fortune IV").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Efficiency ").color(TextColor.color(0xAAAAAA)).append(text("VII").color(TextColor.color(0xAF0000))));
+        lore.add(text("Fortune ").color(TextColor.color(0xAAAAAA)).append(text("IV").color(TextColor.color(0xAF0000))));
         lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
-        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Unbreaking ").color(TextColor.color(0xAAAAAA)).append(text("V").color(TextColor.color(0xAF0000))));
+        lore.add(text("").color(TextColor.color(0x555555)));
+        lore.add(text("v1").color(TextColor.color(0xAF0000)));
         mata.lore(lore);
         item.setItemMeta(mata);
         item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 7);
@@ -70,6 +74,7 @@ public class MythicalItemManager {
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
+
         MythicalPickFortune = item;
     }
     private static void createMythicalShovelSilk() {
@@ -77,10 +82,12 @@ public class MythicalItemManager {
         ItemMeta mata = item.getItemMeta();
         mata.displayName(text("Mythical Shovel").color(TextColor.color(0xAA0000)).decoration(TextDecoration.BOLD, true));
         ArrayList<Component> lore = new ArrayList<>();
-        lore.add(text("Efficiency VII").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Efficiency ").color(TextColor.color(0xAAAAAA)).append(text("VII").color(TextColor.color(0xAF0000))));
         lore.add(text("Silk Touch").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
-        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Unbreaking ").color(TextColor.color(0xAAAAAA)).append(text("V").color(TextColor.color(0xAF0000))));
+        lore.add(text("").color(TextColor.color(0x555555)));
+        lore.add(text("v1").color(TextColor.color(0xAF0000)));
         mata.lore(lore);
         item.setItemMeta(mata);
         item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 7);
@@ -96,10 +103,12 @@ public class MythicalItemManager {
         ItemMeta mata = item.getItemMeta();
         mata.displayName(text("Mythical Axe").color(TextColor.color(0xAA0000)).decoration(TextDecoration.BOLD, true));
         ArrayList<Component> lore = new ArrayList<>();
-        lore.add(text("Efficiency X").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Efficiency ").color(TextColor.color(0xAAAAAA)).append(text("X").color(TextColor.color(0xAF0000))));
         lore.add(text("Silk Touch").color(TextColor.color(0xAAAAAA)));
         lore.add(text("Mending").color(TextColor.color(0xAAAAAA)));
-        lore.add(text("Unbreaking V").color(TextColor.color(0xAAAAAA)));
+        lore.add(text("Unbreaking ").color(TextColor.color(0xAAAAAA)).append(text("V").color(TextColor.color(0xAF0000))));
+        lore.add(text("").color(TextColor.color(0x555555)));
+        lore.add(text("v1").color(TextColor.color(0xAF0000)));
         mata.lore(lore);
         item.setItemMeta(mata);
         item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 10);
