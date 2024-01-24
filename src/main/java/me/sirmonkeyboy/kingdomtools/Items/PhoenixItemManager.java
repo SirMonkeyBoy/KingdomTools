@@ -164,7 +164,7 @@ public class PhoenixItemManager {
         lore.add(text("Sharpness ").color(TextColor.color(0x555555)).append(text("VII").color(TextColor.color(0x007CFF))));
         lore.add(text("Smite ").color(TextColor.color(0x555555)).append(text("VII").color(TextColor.color(0x007CFF))));
         lore.add(text("Bane of Arthropods ").color(TextColor.color(0x555555)).append(text("VII").color(TextColor.color(0x007CFF))));
-        lore.add(text("Looting VI").color(TextColor.color(0x555555)).append(text("VI").color(TextColor.color(0x007CFF))));
+        lore.add(text("Looting ").color(TextColor.color(0x555555)).append(text("VI").color(TextColor.color(0x007CFF))));
         lore.add(text("Sweeping Edge ").color(TextColor.color(0x555555)).append(text("III").color(TextColor.color(0x007CFF))));
         lore.add(text("Knockback ").color(TextColor.color(0x555555)).append(text("II").color(TextColor.color(0x007CFF))));
         lore.add(text("Mending").color(TextColor.color(0x555555)));
