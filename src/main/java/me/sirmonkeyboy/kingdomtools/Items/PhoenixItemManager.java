@@ -9,6 +9,7 @@ import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
@@ -233,7 +234,7 @@ public class PhoenixItemManager {
         PhoenixRod = item;
     }
 
-    private static void createPhoenixHoeFortune() {
+    public static @NotNull ItemStack createPhoenixHoeFortune() {
         ItemStack item = new ItemStack(Material.DIAMOND_HOE);
         ItemMeta mata = item.getItemMeta();
         mata.displayName(text("Phoenix Hoe").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
@@ -252,6 +253,7 @@ public class PhoenixItemManager {
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixHoeFortune = item;
+        return item;
     }
 
     private static void createPhoenixHelmet() {
