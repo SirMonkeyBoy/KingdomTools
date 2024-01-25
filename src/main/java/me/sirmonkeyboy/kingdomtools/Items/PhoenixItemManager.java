@@ -1,21 +1,27 @@
 package me.sirmonkeyboy.kingdomtools.Items;
 
+import me.sirmonkeyboy.kingdomtools.KingdomTools;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.TextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 
 import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.jetbrains.annotations.NotNull;
+import org.bukkit.persistence.PersistentDataType;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 
 import static net.kyori.adventure.text.Component.*;
 
 public class PhoenixItemManager {
+
+    private static final KingdomTools plugin = KingdomTools.getPluginInstance();
+
 
     //Tools
 
@@ -234,10 +240,10 @@ public class PhoenixItemManager {
         PhoenixRod = item;
     }
 
-    public static @NotNull ItemStack createPhoenixHoeFortune() {
+    public static void createPhoenixHoeFortune() {
         ItemStack item = new ItemStack(Material.DIAMOND_HOE);
-        ItemMeta mata = item.getItemMeta();
-        mata.displayName(text("Phoenix Hoe").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
+        ItemMeta meta = item.getItemMeta();
+        meta.displayName(text("Phoenix Hoe").color(TextColor.color(0x0000AA)).decoration(TextDecoration.BOLD, true));
         ArrayList<Component> lore = new ArrayList<>();
         lore.add(text("Efficiency ").color(TextColor.color(0x555555)).append(text("V").color(TextColor.color(0x007CFF))));
         lore.add(text("Fortune ").color(TextColor.color(0x555555)).append(text("V").color(TextColor.color(0x007CFF))));
@@ -245,15 +251,15 @@ public class PhoenixItemManager {
         lore.add(text("Unbreaking ").color(TextColor.color(0x555555)).append(text("V").color(TextColor.color(0x007CFF))));
         lore.add(text("").color(TextColor.color(0x555555)));
         lore.add(text("v1").color(TextColor.color(0x007CFF)));
-        mata.lore(lore);
-        item.setItemMeta(mata);
+        meta.lore(lore);
         item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 5);
         item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS,5);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
+        meta.getPersistentDataContainer().set(new NamespacedKey(plugin, "AutoReplant"), PersistentDataType.BYTE, (byte) 0);
+        item.setItemMeta(meta);
         PhoenixHoeFortune = item;
-        return item;
     }
 
     private static void createPhoenixHelmet() {

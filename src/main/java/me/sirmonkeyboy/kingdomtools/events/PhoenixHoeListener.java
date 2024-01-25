@@ -1,17 +1,15 @@
 package me.sirmonkeyboy.kingdomtools.events;
 
 import me.sirmonkeyboy.kingdomtools.Items.PhoenixItemManager;
-import me.sirmonkeyboy.kingdomtools.KingdomTools;
-
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
+import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -23,11 +21,12 @@ import java.util.UUID;
 import static org.bukkit.Bukkit.getServer;
 
 public class PhoenixHoeListener implements Listener {
-    private final KingdomTools plugin;
+    private final JavaPlugin plugin;
 
-    public PhoenixHoeListener(KingdomTools plugin) {
+    public PhoenixHoeListener(JavaPlugin plugin) {
         this.plugin = plugin;
     }
+
     private final Map<UUID, Boolean> autoReplantMap = new HashMap<>();
     private final Map<UUID, Material> cropToReplantMap = new HashMap<>();
     private final Map<UUID, Long> shiftRightClickCooldown = new HashMap<>();
@@ -65,7 +64,7 @@ public class PhoenixHoeListener implements Listener {
 
                 // Schedule the replanting task with a delay
                 getServer().getScheduler().runTaskLater(
-                        JavaPlugin.getPlugin(KingdomTools.class),
+                        plugin,
                         () -> autoReplant(block, player),
                         1
                 );
@@ -81,15 +80,9 @@ public class PhoenixHoeListener implements Listener {
         if (isPhoenixHoe(player.getInventory().getItemInMainHand())) {
             // Toggle auto-replant on shift-right-click
             if (event.getAction().name().contains("RIGHT") && isSneaking(player)) {
-                // Check if the player has the required permission
-                if (player.hasPermission("KingdomTools.HoeAutoReplant")) {
-                    if (canToggleAutoReplant(player.getUniqueId())) {
-                        toggleAutoReplant(player.getUniqueId());
-                        player.sendMessage("Auto-Replant: " + (autoReplantMap.getOrDefault(player.getUniqueId(), false) ? "Enabled" : "Disabled"));
-                    }
-                } else {
-                    // Player does not have the required permission
-                    player.sendMessage("You do not have permission to use auto-replant.");
+                if (canToggleAutoReplant(player.getUniqueId())) {
+                    toggleAutoReplant(player.getUniqueId());
+                    player.sendMessage("Auto-Replant: " + (autoReplantMap.getOrDefault(player.getUniqueId(), false) ? "Enabled" : "Disabled"));
                 }
             }
         }
@@ -111,8 +104,6 @@ public class PhoenixHoeListener implements Listener {
         if (cropType != null && seedType != null) {
             // Deduct one seed from the player's inventory
             if (deductSeedFromInventory(player, seedType)) {
-                // Clear drops from the block
-
                 // Set the block to the planted state, considering block state
                 new BukkitRunnable() {
                     @Override
@@ -168,7 +159,7 @@ public class PhoenixHoeListener implements Listener {
     }
 
     private boolean isPhoenixHoe(ItemStack item) {
-        return item != null && (item.isSimilar(PhoenixItemManager.createPhoenixHoeFortune())
+        return item != null && (item.isSimilar(PhoenixItemManager.PhoenixHoeFortune)
                 || item.getType() == Material.NETHERITE_HOE
                 || item.getType() == Material.DIAMOND_HOE);
     }
