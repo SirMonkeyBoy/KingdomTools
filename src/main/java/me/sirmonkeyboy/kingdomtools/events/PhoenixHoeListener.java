@@ -75,14 +75,15 @@ public class PhoenixHoeListener implements Listener {
     @EventHandler
     public void onPlayerInteract(PlayerInteractEvent event) {
         Player player = event.getPlayer();
-
+        if (player.hasPermission("KingdomTools.PhoenixPower")){
         // Check if the player has a Phoenix Hoe
-        if (isPhoenixHoe(player.getInventory().getItemInMainHand())) {
-            // Toggle auto-replant on shift-right-click
-            if (event.getAction().name().contains("RIGHT") && isSneaking(player)) {
-                if (canToggleAutoReplant(player.getUniqueId())) {
-                    toggleAutoReplant(player.getUniqueId());
-                    player.sendMessage("Auto-Replant: " + (autoReplantMap.getOrDefault(player.getUniqueId(), false) ? "Enabled" : "Disabled"));
+            if (isPhoenixHoe(player.getInventory().getItemInMainHand())) {
+                // Toggle auto-replant on shift-right-click
+                if (event.getAction().name().contains("RIGHT") && isSneaking(player)) {
+                    if (canToggleAutoReplant(player.getUniqueId())) {
+                        toggleAutoReplant(player.getUniqueId());
+                        player.sendMessage("Auto-Replant: " + (autoReplantMap.getOrDefault(player.getUniqueId(), false) ? "Enabled" : "Disabled"));
+                    }
                 }
             }
         }

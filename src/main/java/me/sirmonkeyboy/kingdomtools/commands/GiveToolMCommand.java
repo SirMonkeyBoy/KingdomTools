@@ -50,7 +50,7 @@ public class GiveToolMCommand implements TabExecutor {
                         }
                     }
             }else if (!p.hasPermission("KingdomTools.commands.giveTools")){
-                p.sendMessage(Component.text("You Don't have permission to use this command").color(TextColor.color(0xAA0000)));
+                p.sendMessage(Component.text("You don't have permission to use this command").color(TextColor.color(0xAA0000)));
             }
         }else if (sender instanceof  ConsoleCommandSender c){
             c.sendMessage(Component.text("Console can't run this command").color(TextColor.color(0xAA0000)));
