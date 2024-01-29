@@ -12,7 +12,6 @@ import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
 
@@ -144,7 +143,6 @@ public class PhoenixItemManager {
         lore.add(text("Sweeping Edge ").color(TextColor.color(0x555555)).append(text("III").color(TextColor.color(0x007CFF))));
         lore.add(text("Knockback ").color(TextColor.color(0x555555)).append(text("II").color(TextColor.color(0x007CFF))));
         lore.add(text("Efficiency ").color(TextColor.color(0x555555)).append(text("X").color(TextColor.color(0x007CFF))));
-        lore.add(text("Silk Touch").color(TextColor.color(0x555555)));
         lore.add(text("Mending").color(TextColor.color(0x555555)));
         lore.add(text("Unbreaking ").color(TextColor.color(0x555555)).append(text("V").color(TextColor.color(0x007CFF))));
         lore.add(text("").color(TextColor.color(0x555555)));
@@ -157,6 +155,7 @@ public class PhoenixItemManager {
         item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 6);
         item.addUnsafeEnchantment(Enchantment.SWEEPING_EDGE, 3);
         item.addUnsafeEnchantment(Enchantment.KNOCKBACK, 2);
+        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 10);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
