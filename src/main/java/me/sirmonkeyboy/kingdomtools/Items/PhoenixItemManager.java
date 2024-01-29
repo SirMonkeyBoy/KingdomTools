@@ -255,8 +255,8 @@ public class PhoenixItemManager {
         item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS,5);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
-        item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         meta.getPersistentDataContainer().set(new NamespacedKey(plugin, "AutoReplant"), PersistentDataType.BYTE, (byte) 0);
+        item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         item.setItemMeta(meta);
         PhoenixHoeFortune = item;
     }
