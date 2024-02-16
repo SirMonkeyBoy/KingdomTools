@@ -27,12 +27,15 @@ public class MythicalItemManager {
 
     public static ItemStack MythicalSword;
 
+    public static ItemStack MythicalShears;
+
     static {
         createMythicalPickSilk();
         createMythicalPickFortune();
         createMythicalShovelSilk();
         createMythicalAxeSilk();
         createMythicalSword();
+        createMythicalShears();
     }
 
     private static void createMythicalPickSilk() {
@@ -146,5 +149,25 @@ public class MythicalItemManager {
         item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         MythicalSword = item;
+    }
+    private static void createMythicalShears() {
+        ItemStack item = new ItemStack(Material.SHEARS);
+        ItemMeta mata = item.getItemMeta();
+        mata.displayName(text("Mythical Shears").color(TextColor.color(0xAA0000)).decoration(TextDecoration.BOLD, true));
+        ArrayList<Component> lore = new ArrayList<>();
+        lore.add(text("Efficiency ").color(TextColor.color(0x555555)).append(text("X").color(TextColor.color(0xAF0000))));
+        lore.add(text("Fortune ").color(TextColor.color(0x555555)).append(text("IV").color(TextColor.color(0xAF0000))));
+        lore.add(text("Mending").color(TextColor.color(0x555555)));
+        lore.add(text("Unbreaking ").color(TextColor.color(0x555555)).append(text("V").color(TextColor.color(0xAF0000))));
+        lore.add(text("").color(TextColor.color(0x555555)));
+        lore.add(text("v1").color(TextColor.color(0xAF0000)));
+        mata.lore(lore);
+        item.setItemMeta(mata);
+        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 10);
+        item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 4);
+        item.addUnsafeEnchantment(Enchantment.MENDING, 1);
+        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
+        MythicalShears = item;
     }
 }
