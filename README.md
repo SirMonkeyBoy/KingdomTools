@@ -30,5 +30,6 @@ Mythical Items
 - Mythical Shovel Silk
 - Mythical Axe
 - Mythical Shovel
+- Mythical Shears
 
 Working on adding more items
