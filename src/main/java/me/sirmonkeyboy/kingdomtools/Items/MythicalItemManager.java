@@ -51,10 +51,10 @@ public class MythicalItemManager {
         lore.add(text("v1").color(TextColor.color(0xAF0000)));
         mata.lore(lore);
         item.setItemMeta(mata);
-        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 7);
+        item.addUnsafeEnchantment(Enchantment.EFFICIENCY, 7);
         item.addUnsafeEnchantment(Enchantment.SILK_TOUCH, 1);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         MythicalPickSilk = item;
     }
@@ -72,10 +72,10 @@ public class MythicalItemManager {
         lore.add(text("v1").color(TextColor.color(0xAF0000)));
         mata.lore(lore);
         item.setItemMeta(mata);
-        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 7);
-        item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 4);
+        item.addUnsafeEnchantment(Enchantment.EFFICIENCY, 7);
+        item.addUnsafeEnchantment(Enchantment.LOOTING, 4);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
 
         MythicalPickFortune = item;
@@ -93,10 +93,10 @@ public class MythicalItemManager {
         lore.add(text("v1").color(TextColor.color(0xAF0000)));
         mata.lore(lore);
         item.setItemMeta(mata);
-        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 7);
+        item.addUnsafeEnchantment(Enchantment.EFFICIENCY, 7);
         item.addUnsafeEnchantment(Enchantment.SILK_TOUCH,1);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         MythicalShovelSilk = item;
     }
@@ -114,10 +114,10 @@ public class MythicalItemManager {
         lore.add(text("v1").color(TextColor.color(0xAF0000)));
         mata.lore(lore);
         item.setItemMeta(mata);
-        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 10);
+        item.addUnsafeEnchantment(Enchantment.EFFICIENCY, 10);
         item.addUnsafeEnchantment(Enchantment.SILK_TOUCH,1);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
        MythicalAxeSilk = item;
     }
@@ -139,14 +139,14 @@ public class MythicalItemManager {
         lore.add(text("v1").color(TextColor.color(0xAF0000)));
         mata.lore(lore);
         item.setItemMeta(mata);
-        item.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 5);
-        item.addUnsafeEnchantment(Enchantment.DAMAGE_UNDEAD, 5);
-        item.addUnsafeEnchantment(Enchantment.DAMAGE_ARTHROPODS,5);
-        item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 5);
+        item.addUnsafeEnchantment(Enchantment.SHARPNESS, 5);
+        item.addUnsafeEnchantment(Enchantment.SMITE, 5);
+        item.addUnsafeEnchantment(Enchantment.BANE_OF_ARTHROPODS,5);
+        item.addUnsafeEnchantment(Enchantment.LOOTING, 5);
         item.addUnsafeEnchantment(Enchantment.SWEEPING_EDGE, 3);
         item.addUnsafeEnchantment(Enchantment.KNOCKBACK, 2);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         MythicalSword = item;
     }
@@ -163,10 +163,10 @@ public class MythicalItemManager {
         lore.add(text("v1").color(TextColor.color(0xAF0000)));
         mata.lore(lore);
         item.setItemMeta(mata);
-        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 10);
-        item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 4);
+        item.addUnsafeEnchantment(Enchantment.EFFICIENCY, 10);
+        item.addUnsafeEnchantment(Enchantment.LOOTING, 4);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         MythicalShears = item;
     }

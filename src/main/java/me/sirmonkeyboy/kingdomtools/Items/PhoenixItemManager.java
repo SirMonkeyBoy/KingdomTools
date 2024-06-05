@@ -81,10 +81,10 @@ public class PhoenixItemManager {
         lore.add(text("v1").color(TextColor.color(0x007CFF)));
         mata.lore(lore);
         item.setItemMeta(mata);
-        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 12);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 12);
         item.addUnsafeEnchantment(Enchantment.SILK_TOUCH, 1);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixPickSilk = item;
     }
@@ -102,10 +102,10 @@ public class PhoenixItemManager {
         lore.add(text("v1").color(TextColor.color(0x007CFF)));
         mata.lore(lore);
         item.setItemMeta(mata);
-        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 11);
-        item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 11);
+        item.addUnsafeEnchantment(Enchantment.LOOTING, 5);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixPickFortune = item;
     }
@@ -123,10 +123,10 @@ public class PhoenixItemManager {
         lore.add(text("v1").color(TextColor.color(0x007CFF)));
         mata.lore(lore);
         item.setItemMeta(mata);
-        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 10);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 10);
         item.addUnsafeEnchantment(Enchantment.SILK_TOUCH,1);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixShovelSilk = item;
     }
@@ -149,15 +149,15 @@ public class PhoenixItemManager {
         lore.add(text("v1").color(TextColor.color(0x007CFF)));
         mata.lore(lore);
         item.setItemMeta(mata);
-        item.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 7);
-        item.addUnsafeEnchantment(Enchantment.DAMAGE_UNDEAD, 7);
-        item.addUnsafeEnchantment(Enchantment.DAMAGE_ARTHROPODS,7);
-        item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 6);
+        item.addUnsafeEnchantment(Enchantment.SHARPNESS, 7);
+        item.addUnsafeEnchantment(Enchantment.SMITE, 7);
+        item.addUnsafeEnchantment(Enchantment.BANE_OF_ARTHROPODS,7);
+        item.addUnsafeEnchantment(Enchantment.LOOTING, 6);
         item.addUnsafeEnchantment(Enchantment.SWEEPING_EDGE, 3);
         item.addUnsafeEnchantment(Enchantment.KNOCKBACK, 2);
-        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 10);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 10);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixAxe = item;
     }
@@ -179,14 +179,14 @@ public class PhoenixItemManager {
         lore.add(text("v1").color(TextColor.color(0x007CFF)));
         mata.lore(lore);
         item.setItemMeta(mata);
-        item.addUnsafeEnchantment(Enchantment.DAMAGE_ALL, 7);
-        item.addUnsafeEnchantment(Enchantment.DAMAGE_UNDEAD, 7);
-        item.addUnsafeEnchantment(Enchantment.DAMAGE_ARTHROPODS,7);
-        item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS, 6);
+        item.addUnsafeEnchantment(Enchantment.SHARPNESS, 7);
+        item.addUnsafeEnchantment(Enchantment.SMITE, 7);
+        item.addUnsafeEnchantment(Enchantment.BANE_OF_ARTHROPODS,7);
+        item.addUnsafeEnchantment(Enchantment.LOOTING, 6);
         item.addUnsafeEnchantment(Enchantment.SWEEPING_EDGE, 3);
         item.addUnsafeEnchantment(Enchantment.KNOCKBACK, 2);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixSword = item;
     }
@@ -207,13 +207,13 @@ public class PhoenixItemManager {
         lore.add(text("v1").color(TextColor.color(0x007CFF)));
         mata.lore(lore);
         item.setItemMeta(mata);
-        item.addUnsafeEnchantment(Enchantment.ARROW_INFINITE, 5);
-        item.addUnsafeEnchantment(Enchantment.ARROW_DAMAGE, 6);
-        item.addUnsafeEnchantment(Enchantment.ARROW_KNOCKBACK, 3);
-        item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_MOBS,6);
-        item.addUnsafeEnchantment(Enchantment.ARROW_FIRE, 1);
+        item.addUnsafeEnchantment(Enchantment.INFINITY, 5);
+        item.addUnsafeEnchantment(Enchantment.POWER, 6);
+        item.addUnsafeEnchantment(Enchantment.PUNCH, 3);
+        item.addUnsafeEnchantment(Enchantment.LOOTING,6);
+        item.addUnsafeEnchantment(Enchantment.FLAME, 1);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixBow = item;
     }
@@ -232,9 +232,9 @@ public class PhoenixItemManager {
         mata.lore(lore);
         item.setItemMeta(mata);
         item.addUnsafeEnchantment(Enchantment.LURE, 5);
-        item.addUnsafeEnchantment(Enchantment.LUCK,5);
+        item.addUnsafeEnchantment(Enchantment.LUCK_OF_THE_SEA,5);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixRod = item;
     }
@@ -251,10 +251,10 @@ public class PhoenixItemManager {
         lore.add(text("").color(TextColor.color(0x555555)));
         lore.add(text("v1").color(TextColor.color(0x007CFF)));
         meta.lore(lore);
-        item.addUnsafeEnchantment(Enchantment.DIG_SPEED, 5);
-        item.addUnsafeEnchantment(Enchantment.LOOT_BONUS_BLOCKS,5);
+        item.addUnsafeEnchantment(Enchantment.EFFICIENCY, 5);
+        item.addUnsafeEnchantment(Enchantment.LOOTING,5);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         meta.getPersistentDataContainer().set(new NamespacedKey(plugin, "AutoReplant"), PersistentDataType.BYTE, (byte) 0);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         item.setItemMeta(meta);
@@ -278,14 +278,14 @@ public class PhoenixItemManager {
         lore.add(text("v1").color(TextColor.color(0x007CFF)));
         meta.lore(lore);
         item.setItemMeta(meta);
-        item.addUnsafeEnchantment(Enchantment.WATER_WORKER, 5);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 5);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 5);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_FIRE, 5);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_PROJECTILE, 5);
-        item.addUnsafeEnchantment(Enchantment.OXYGEN, 5);
+        item.addUnsafeEnchantment(Enchantment.AQUA_AFFINITY, 5);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION, 5);
+        item.addUnsafeEnchantment(Enchantment.BLAST_PROTECTION, 5);
+        item.addUnsafeEnchantment(Enchantment.FIRE_PROTECTION, 5);
+        item.addUnsafeEnchantment(Enchantment.PROJECTILE_PROTECTION, 5);
+        item.addUnsafeEnchantment(Enchantment.RESPIRATION, 5);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixHelmet = item;
     }
@@ -305,12 +305,12 @@ public class PhoenixItemManager {
         lore.add(text("v1").color(TextColor.color(0x007CFF)));
         meta.lore(lore);
         item.setItemMeta(meta);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 5);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 5);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_FIRE, 5);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_PROJECTILE, 5);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION, 5);
+        item.addUnsafeEnchantment(Enchantment.BLAST_PROTECTION, 5);
+        item.addUnsafeEnchantment(Enchantment.FIRE_PROTECTION, 5);
+        item.addUnsafeEnchantment(Enchantment.PROJECTILE_PROTECTION, 5);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixElytra = item;
     }
@@ -330,12 +330,12 @@ public class PhoenixItemManager {
         lore.add(text("v1").color(TextColor.color(0x007CFF)));
         meta.lore(lore);
         item.setItemMeta(meta);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 5);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 5);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_FIRE, 5);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_PROJECTILE, 5);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION, 5);
+        item.addUnsafeEnchantment(Enchantment.BLAST_PROTECTION, 5);
+        item.addUnsafeEnchantment(Enchantment.FIRE_PROTECTION, 5);
+        item.addUnsafeEnchantment(Enchantment.PROJECTILE_PROTECTION, 5);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixPants = item;
     }
@@ -356,13 +356,13 @@ public class PhoenixItemManager {
         lore.add(text("v1").color(TextColor.color(0x007CFF)));
         meta.lore(lore);
         item.setItemMeta(meta);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_ENVIRONMENTAL, 5);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_EXPLOSIONS, 5);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_FIRE, 5);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_PROJECTILE, 5);
-        item.addUnsafeEnchantment(Enchantment.PROTECTION_FALL, 5);
+        item.addUnsafeEnchantment(Enchantment.PROTECTION, 5);
+        item.addUnsafeEnchantment(Enchantment.BLAST_PROTECTION, 5);
+        item.addUnsafeEnchantment(Enchantment.FIRE_PROTECTION, 5);
+        item.addUnsafeEnchantment(Enchantment.PROJECTILE_PROTECTION, 5);
+        item.addUnsafeEnchantment(Enchantment.FEATHER_FALLING, 5);
         item.addUnsafeEnchantment(Enchantment.MENDING, 1);
-        item.addUnsafeEnchantment(Enchantment.DURABILITY, 5);
+        item.addUnsafeEnchantment(Enchantment.UNBREAKING, 5);
         item.addItemFlags(ItemFlag.HIDE_ATTRIBUTES, ItemFlag.HIDE_ENCHANTS);
         PhoenixBoots = item;
     }
